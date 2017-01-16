@@ -26,8 +26,8 @@ app.factory(
     var header = {
       'Content-Type' : 'application/json'
     };
-    if(token == undefined){
-      header.Autorization = token;
+    if(user !== undefined && user !== null ? undefined){
+      header.Authorization = token;
     }
 
     return service;
